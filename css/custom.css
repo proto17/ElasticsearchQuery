@@ -1,0 +1,174 @@
+body {
+    margin: 0;
+    padding: 0;
+    min-width: 800px;
+    overflow-x: auto;
+}
+
+#widget-container {
+    position: absolute;
+    height: 100px;
+    left: 0;
+    right: 0;
+    top: 0;
+    background-color: gray;
+    overflow-y: auto;
+    display: block;
+    min-width: 800px;
+}
+
+#widget-container-resize {
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 100px;
+    height: 10px;
+    background-color: silver;
+    cursor: ns-resize;
+    border-bottom: 1px solid black;
+    border-top: 1px solid black;
+}
+
+#widget-container > .search-container {
+    height: 25px;
+    border: 1px solid black;
+    background-color: silver;
+    border-radius: 5px;
+    padding: 5px;
+    min-width: 150px;
+    max-width: 200px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+#widget-container > .search-container > .search-container-buttons {
+    float: left;
+    width: 18px;
+    height: 30px;
+    border-right: 1px solid black;
+    position: relative;
+    top: -2px;
+}
+
+#widget-container > .search-container > .search-container-buttons  > i.fa {
+    width: 13px;
+    /*font-size: 15px;*/
+    display: block;
+    height: 12px;
+    line-height: 10px;
+    margin-bottom: 2px;
+    cursor: pointer;
+    border: 1px solid transparent;
+    border-radius: 3px;
+}
+
+#widget-container > .search-container > .search-container-buttons  > i.fa:hover {
+    border: 1px solid black;
+}
+
+#widget-container > .search-container > .search-container-buttons  > i.fa.fa-font {
+    font-size: 13px;
+}
+
+#widget-container > .search-container > .search-container-buttons  > i.fa:last-of-type {
+    padding-bottom: 0px;
+}
+
+#widget-container > .search-container > .search-container-text-parent {
+    display: block;
+    height: 100%;
+    line-height: 25px;
+    text-align: center;
+}
+
+#widget-container > .search-container > .search-container-text-parent > .search-container-text {
+    height: 100%;
+    text-align: left;
+    padding-left: 5px;
+    cursor: default;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+}
+
+#js-container {
+    position: absolute;
+    width: 100%;
+    /*left: 0;*/
+    /*right: 0;*/
+    bottom: 0;
+    top: 122px;
+    background-color: silver;
+}
+
+#js-container > #request-editor-container {
+    position: absolute;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    width: 500px;
+}
+
+#js-container > #request-editor-container > #request-editor {
+    width: 100%;
+    /*height: 100%;*/
+    position: absolute;
+    top: 26px;
+    bottom: 0;
+}
+
+#js-container > #response-editor {
+    position: absolute;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    width: 500px;
+}
+
+#js-container > #editor-resize-handle {
+    width: 10px;
+    position: absolute;
+    cursor: ew-resize;
+    left: 500px;
+    top: -1px;
+    bottom: 0;
+    border-left: 1px solid black;
+    border-right: 1px solid black;
+    background-color: silver;
+    z-index: 100;
+}
+
+#js-container > #request-editor-container > #actions-container {
+    width: 100%;
+    position: relative;
+    height: 25px;
+    background-color: gray;
+    line-height: 25px;
+    display: inline-flex;
+    font-size: 15px;
+    veritcal-align: bottom;
+    border-bottom: 1px solid black;
+}
+
+#js-container > #request-editor-container > #actions-container > input#target {
+    font-size: 15px;
+    height: 16px;
+    flex: auto;
+    margin-right: 4px;
+}
+
+#js-container > #request-editor-container > #actions-container > span {
+    padding-right: 4px;
+}
+
+#js-container > #request-editor-container > #actions-container > select {
+    font-size: 15px;
+    height: 25px;
+}

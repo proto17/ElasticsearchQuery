@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title></title>
+
+    <script src="js/jquery-2.1.4.js"></script>
+    <script src="js/jquery-ui-1.11.4/jquery-ui.js"></script>
+    <script src="js/ace/ace.js"></script>
+    <script src="js/custom.js"></script>
+
+    <link rel="stylesheet" href="js/jquery-ui-1.11.4/jquery-ui.css">
+
+    <link rel="stylesheet" href="css/font-awesome-4.3.0/css/font-awesome.css">
+    <link rel="stylesheet" href="css/custom.css">
+</head>
+<body>
+    <div id="widget-container"></div>
+    <div id="widget-container-resize"></div>
+
+    <div id="js-container">
+
+        <div id="request-editor-container">
+            <div id="actions-container">
+                <span id="action-text">Action: </span>
+                <select id="action">
+                    <option id="get">GET</option>
+                    <option id="post">POST</option>
+                    <option id="put">PUT</option>
+                </select>
+                <div style="width: 30px">&nbsp</div>
+                <span>Target: </span>
+                <input type="text" id="target" class="text">
+            </div>
+            <div id="request-editor"></div>
+        </div>
+        <div id="editor-resize-handle"></div>
+        <div id="response-editor"></div>
+    </div>
+
+</body>
+</html>
